@@ -13,9 +13,7 @@
 
 	<bean class="com.springtutorial.InitHelloWorld" />
 
-	<bean id="te" class="com.springtutorial.TextEditor">
-		<property name="SpellChecker">
-			<bean id="sc" class="com.springtutorial.SpellChecker"></bean>
-		</property>
-	</bean>
+	<bean id="te" class="com.springtutorial.TextEditor" />
+	
+	<bean id="sc" class="com.springtutorial.SpellChecker" />
 </beans>

@@ -9,6 +9,8 @@ public class MainApp {
 		AbstractApplicationContext context = new ClassPathXmlApplicationContext("Beans.xml");
 
 		TextEditor obj = (TextEditor) context.getBean("te");
+		SpellChecker sc = (SpellChecker) context.getBean("sc");
+		obj.setSpellChecker(sc);
 		obj.checkSpelling();;
 		context.registerShutdownHook();
 	}
